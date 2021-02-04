@@ -1,0 +1,13 @@
+{
+  "name": "hysh-docker-node-alpine",
+  "version": "1.0.0",
+  "description": "HyperShell Node.js Alpine container",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker build . -t xapp73/hysh-docker-node-alpine",
+    "docker:push": "docker push xapp73/hysh-docker-node-alpine",
+    "docker:run": "docker run -dit -p 3033:3000 --restart always --name hysh-docker-node-alpine -e \"CHAINCODE_ID_NAME=8b554abeb1144726ab3167f67bdfba36\" xapp73/hysh-docker-node-alpine"
+  },
+  "author": "",
+  "license": "ISC"
+}
