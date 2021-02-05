@@ -2,7 +2,7 @@ FROM node:12.20.1-alpine3.10
 
 RUN apk update
 RUN apk upgrade
-RUN apk add libc6-compat
+RUN apk add libc6-compat bash
 
 WORKDIR /applications/demo
 
